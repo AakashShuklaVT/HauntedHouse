@@ -11,7 +11,7 @@ import { GLTFLoader } from 'three/examples/jsm/Addons.js'
  * Base
  */
 // Debug
-const gui = new GUI()
+// const gui = new GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -47,13 +47,13 @@ fontLoader.load('/fonts/Eater_Regular.json',
         textMesh1.position.set(-4.02, 11, -15)
         textMesh2.position.set(5.32, 6.5, -15)
 
-        gui.add(textMesh1.position, 'x').min(-10).max(10).name('Haunted text x pos')
-        gui.add(textMesh1.position, 'y').min(-10).max(10).name('Haunted text y pos')
-        gui.add(textMesh1.position, 'z').min(-20).max(20).name('Haunted text z pos')
+        // gui.add(textMesh1.position, 'x').min(-10).max(10).name('Haunted text x pos')
+        // gui.add(textMesh1.position, 'y').min(-10).max(10).name('Haunted text y pos')
+        // gui.add(textMesh1.position, 'z').min(-20).max(20).name('Haunted text z pos')
 
-        gui.add(textMesh2.position, 'x').min(-10).max(10).name('House text x pos')
-        gui.add(textMesh2.position, 'y').min(-10).max(10).name('House text y pos')
-        gui.add(textMesh2.position, 'z').min(-20).max(20).name('House text z pos')
+        // gui.add(textMesh2.position, 'x').min(-10).max(10).name('House text x pos')
+        // gui.add(textMesh2.position, 'y').min(-10).max(10).name('House text y pos')
+        // gui.add(textMesh2.position, 'z').min(-20).max(20).name('House text z pos')
 
         scene.add(textMesh1, textMesh2);
     }
